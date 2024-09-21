@@ -1,3 +1,5 @@
+[![.NET](https://github.com/aimenux/LoggingRedactionDemo/actions/workflows/ci.yml/badge.svg)](https://github.com/aimenux/LoggingRedactionDemo/actions/workflows/ci.yml)
+
 # LoggingRedactionDemo
 ```
 Protecting personal and sensitive data with microsoft redaction library
