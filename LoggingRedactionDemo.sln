@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D4D1E761-4D72-43B9-AC6C-375D3552C662}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example01", "src\Example01\Example01.csproj", "{77752774-C00E-4113-9628-89695FAB51BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example02", "src\Example02\Example02.csproj", "{68D52FBC-E0D8-44BC-95DD-58723824412D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "files", "files", "{C654F408-BEDC-43E8-8ABE-79031FD99DE0}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+		Directory.Build.props = Directory.Build.props
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{77752774-C00E-4113-9628-89695FAB51BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77752774-C00E-4113-9628-89695FAB51BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77752774-C00E-4113-9628-89695FAB51BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77752774-C00E-4113-9628-89695FAB51BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D52FBC-E0D8-44BC-95DD-58723824412D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D52FBC-E0D8-44BC-95DD-58723824412D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68D52FBC-E0D8-44BC-95DD-58723824412D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D52FBC-E0D8-44BC-95DD-58723824412D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77752774-C00E-4113-9628-89695FAB51BE} = {D4D1E761-4D72-43B9-AC6C-375D3552C662}
+		{68D52FBC-E0D8-44BC-95DD-58723824412D} = {D4D1E761-4D72-43B9-AC6C-375D3552C662}
+	EndGlobalSection
+EndGlobal
