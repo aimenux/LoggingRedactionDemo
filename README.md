@@ -13,4 +13,4 @@ In this demo, i m using [microsoft redaction library](https://www.nuget.org/pack
 - `Example02` : using redaction with webapi application
 >
 
-**`Tools`** : net 8.0
+**`Tools`** : net 9.0
