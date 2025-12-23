@@ -1,5 +1,5 @@
 ﻿using Example02.Extensions;
-using Example02.Users;
+using Example02.Features.Users;
 
 namespace Example02;
 

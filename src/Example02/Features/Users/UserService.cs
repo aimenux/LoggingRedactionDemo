@@ -1,4 +1,4 @@
-﻿namespace Example02.Users;
+﻿namespace Example02.Features.Users;
 
 public interface IUserService
 {

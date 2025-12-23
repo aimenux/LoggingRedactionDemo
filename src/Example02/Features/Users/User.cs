@@ -1,6 +1,6 @@
-﻿using Example02.Redaction;
+﻿using Example02.Features.Redaction;
 
-namespace Example02.Users;
+namespace Example02.Features.Users;
 
 public sealed record User
 {

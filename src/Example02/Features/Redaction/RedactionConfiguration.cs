@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Compliance.Classification;
 using Microsoft.Extensions.Compliance.Redaction;
 
-namespace Example02.Redaction;
+namespace Example02.Features.Redaction;
 
 public static class RedactionConfiguration
 {

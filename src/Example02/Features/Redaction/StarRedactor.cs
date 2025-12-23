@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Compliance.Redaction;
 
-namespace Example02.Redaction;
+namespace Example02.Features.Redaction;
 
 public sealed class StarRedactor : Redactor
 {

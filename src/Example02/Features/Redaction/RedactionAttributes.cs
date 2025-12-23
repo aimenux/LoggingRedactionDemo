@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Compliance.Classification;
 
-namespace Example02.Redaction;
+namespace Example02.Features.Redaction;
 
 public static class DataTaxonomy
 {

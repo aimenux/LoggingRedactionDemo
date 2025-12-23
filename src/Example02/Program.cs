@@ -1,6 +1,6 @@
 using Example02;
 using Example02.Extensions;
-using Example02.Users;
+using Example02.Features.Users;
 
 var builder = WebApplication.CreateBuilder(args);
 

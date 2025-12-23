@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using Example02.Redaction;
+using Example02.Features.Redaction;
 
 namespace Example02.Extensions;
 
