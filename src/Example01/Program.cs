@@ -1,18 +1,11 @@
-﻿using Example01.Extensions;
+﻿using Example01;
 using Example01.Features.Users;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 using var host = Host.CreateDefaultBuilder(args)
-    .ConfigureLogging((_, loggingBuilder) =>
-    {
-        loggingBuilder.AddLogging();
-    })
-    .ConfigureServices((_, services) =>
-    {
-        services.AddSingleton<IUserService, UserService>();
-    })
+    .AddServices()
     .Build();
 
 var userService = host.Services.GetRequiredService<IUserService>();
