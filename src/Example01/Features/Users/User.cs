@@ -1,6 +1,7 @@
-﻿using Example01.Extensions;
+﻿using Example01.Features.Redaction;
+using Microsoft.Extensions.Logging;
 
-namespace Example01.Models;
+namespace Example01.Features.Users;
 
 public sealed record User
 {
@@ -17,4 +18,7 @@ public sealed record User
     
     [Personal]
     public required string LastName { get; init; }
+    
+    [LogPropertyIgnore]
+    public string FullName => $"{FirstName} {LastName}";
 }

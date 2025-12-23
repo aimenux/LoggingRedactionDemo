@@ -1,6 +1,4 @@
-﻿using Example02.Models;
-
-namespace Example02.Services;
+﻿namespace Example02.Users;
 
 public interface IUserService
 {

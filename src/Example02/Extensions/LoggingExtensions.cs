@@ -1,11 +1,11 @@
 ﻿using System.Text.Json;
-using Example02.Models;
+using Example02.Redaction;
 
 namespace Example02.Extensions;
 
-public static partial class LoggingExtensions
+public static class LoggingExtensions
 {
-    public static void AddJsonLogger(this ILoggingBuilder loggingBuilder)
+    public static void AddLogging(this ILoggingBuilder loggingBuilder)
     {
         loggingBuilder.ClearProviders();
         
@@ -23,8 +23,9 @@ public static partial class LoggingExtensions
             var loggerFactory = serviceProvider.GetRequiredService<ILoggerFactory>();
             return loggerFactory.CreateLogger(categoryName);
         });
+        
+        loggingBuilder.EnableRedaction();
+        
+        loggingBuilder.Services.AddRedaction(RedactionConfiguration.Build());
     }
-    
-    [LoggerMessage(LogLevel.Information, "User retrieved")]
-    public static partial void LogUserRetrieved(this ILogger logger, [LogProperties] User user);
 }

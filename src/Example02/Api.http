@@ -1,11 +1,4 @@
-@HostAddress = http://localhost:5147
+@HostAddress = https://localhost:7285
 
-GET {{HostAddress}}/users/1
+GET {{HostAddress}}/users
 Accept: application/json
-
-###
-
-GET {{HostAddress}}/users/1/redaction
-Accept: application/json
-
-###
