@@ -11,6 +11,8 @@ using var host = Host.CreateDefaultBuilder(args)
 var userService = host.Services.GetRequiredService<IUserService>();
 var logger = host.Services.GetRequiredService<ILogger>();
 var user = userService.GetUserById(Random.Shared.Next());
+logger.LogUserRetrieved(user.FirstName, user.LastName);
+logger.LogUserRetrieved(user.FullName);
 logger.LogUserRetrieved(user);
 
 Console.WriteLine("Press any key to exit !");
