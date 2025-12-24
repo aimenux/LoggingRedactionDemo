@@ -13,6 +13,7 @@ public static class RedactionConfiguration
     {
         return builder => 
         {
+            builder.SetRedactor<ReverseRedactor>(new DataClassificationSet(DataTaxonomy.Restricted));
             builder.SetRedactor<StarRedactor>(new DataClassificationSet(DataTaxonomy.Sensitive));
             builder.SetHmacRedactor(options =>
             {

@@ -16,6 +16,9 @@ public class UserService : IUserService
             Password = "123",
             FirstName = "John",
             LastName = "Snow",
+            UserAgent = "Chrome",
+            Roles = ["admin", "user"],
+            LastActivityDate = DateTime.UtcNow.AddDays(-1)
         };
     }
 }

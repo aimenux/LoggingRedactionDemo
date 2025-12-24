@@ -20,4 +20,13 @@ public sealed record User
     
     [LogPropertyIgnore]
     public string FullName => $"{FirstName} {LastName}";
+    
+    [Default]
+    public required string UserAgent { get; init; }
+
+    [Restricted] 
+    public string[] Roles { get; init; } = [];
+    
+    [Restricted]
+    public DateTime? LastActivityDate { get; init; }
 }

@@ -12,18 +12,6 @@ app.UseSwaggerDoc();
 
 app.UseHttpsRedirection();
 
-app.MapGet("/users", (IUserService userService, ILogger logger) =>
-{
-    var user = userService.GetUserById(Random.Shared.Next());
-    logger.LogUserRetrieved(user.FirstName, user.LastName);
-    logger.LogUserRetrieved(user.FullName);
-    logger.LogUserRetrieved(user);
-    return Results.Ok(new[]
-    {
-        user
-    });
-})
-.WithName("GetUsers")
-.WithOpenApi();
+app.MapUsersEndpoints();
 
 await app.RunAsync();

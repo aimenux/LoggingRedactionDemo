@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.Text.Encodings.Web;
+using System.Text.Json;
 using Example01.Features.Redaction;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -13,9 +14,12 @@ public static class LoggingExtensions
         
         loggingBuilder.AddJsonConsole(options =>
         {
+            options.IncludeScopes = true;
+            
             options.JsonWriterOptions = new JsonWriterOptions
             {
-                Indented = true
+                Indented = true,
+                Encoder = JavaScriptEncoder.UnsafeRelaxedJsonEscaping
             };
         });
         
