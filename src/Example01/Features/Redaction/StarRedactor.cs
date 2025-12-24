@@ -4,7 +4,7 @@ namespace Example01.Features.Redaction;
 
 public sealed class StarRedactor : Redactor
 {
-    public override int GetRedactedLength(ReadOnlySpan<char> input) => input.Length;
+    public override int GetRedactedLength(ReadOnlySpan<char> input) => Math.Min(input.Length, 10);
     
     public override int Redact(ReadOnlySpan<char> source, Span<char> destination)
     {

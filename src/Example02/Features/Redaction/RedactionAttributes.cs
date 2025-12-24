@@ -8,6 +8,8 @@ public static class DataTaxonomy
     public static readonly DataClassification Personal = new(nameof(DataTaxonomy), nameof(Personal));
 }
 
+[AttributeUsage(AttributeTargets.All)]
 public sealed class SensitiveAttribute() : DataClassificationAttribute(DataTaxonomy.Sensitive);
 
+[AttributeUsage(AttributeTargets.All)]
 public sealed class PersonalAttribute() : DataClassificationAttribute(DataTaxonomy.Personal);
