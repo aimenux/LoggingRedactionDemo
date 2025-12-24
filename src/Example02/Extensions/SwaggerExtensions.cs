@@ -11,6 +11,9 @@ public static class SwaggerExtensions
     public static void UseSwaggerDoc(this WebApplication app)
     {
         app.UseSwagger();
-        app.UseSwaggerUI();
+        app.UseSwaggerUI(options =>
+        {
+            options.DisplayRequestDuration();
+        });
     }
 }

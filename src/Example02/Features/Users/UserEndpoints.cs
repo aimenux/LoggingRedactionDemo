@@ -4,9 +4,12 @@ public static class UserEndpoints
 {
     public static void MapUsersEndpoints(this IEndpointRouteBuilder endpoints)
     {
-        endpoints.MapGet("/users", GetUsers)
+        endpoints
+            .MapGet("/users", GetUsers)
             .WithName("GetUsers")
-            .WithOpenApi();
+            .WithSummary("Retrieves a list of users")
+            .WithDescription("Gets all users")
+            .Produces<IEnumerable<User>>(contentType: "application/json");
     }
 
     private static IResult GetUsers(IUserService userService, ILogger<Program> logger)
